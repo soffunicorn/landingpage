@@ -1887,7 +1887,7 @@
 			font-size: 1.929em;
 			top: 10px;
 			position: absolute;
-			right: -50px;
+			right: 0px;
          }
          .img-comment{
          	width: 120px;
@@ -1898,18 +1898,18 @@
          }
          .comment-text{
          	font-weight: 400;
-			color: #FFFFFF;
+			color: #000;
 			margin: 0;
 			    margin-bottom: 0px;
 			margin-bottom: 30px;
          }
          .comment-text::before{
-         	content: '<i class="material-icons">';
+         	content: '\f1b2';
          -webkit-transform: rotate(-180deg);
          transform: rotate(-180deg);
          }
          .comment-text::after{
-         	content: '<i class="material-icons">';
+         	content: '\f1b2';
          }
          .rating-star{
          	color:#FFDC3B;
@@ -1924,9 +1924,13 @@
          	height: 50px;
          }
          .text-black{
-         	color:#000 !important;
+         	color:#000 !important;}
+         .btn-position{
+         	width: 242px;
+         	height: 73px;
          }
-      </style>
+              </style>
+         }
       <link rel="canonical" href="https://nerdcom.host/">
       <link rel="shortcut icon" href="../images/favicon.ico">
    </head>
@@ -2181,76 +2185,63 @@
       <div class="testimonial features bg-circle-x">
       	<div class="container">
       		<h2 class="subtitle-t text-center" style="color:#000;">TESTIMONIOS</h2>
-      		<div class="row">
       			<div id="demo" class="carousel slide" data-ride="carousel">
 					  <!-- Indicators -->
 					  <ul class="carousel-indicators">
 					    <li data-target="#demo" data-slide-to="0" class="active"><img src="../images/comment1.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment chiqui-comment"/></li>
-					    <li data-target="#demo" data-slide-to="1"></li>
-					    <li data-target="#demo" data-slide-to="2"></li>
+					    <li data-target="#demo" data-slide-to="1"><img src="../images/comment2.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment chiqui-comment"/></li>
+					    <li data-target="#demo" data-slide-to="2"><img src="../images/comment3.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment chiqui-comment"/></li>
 					  </ul>
 
 					  <!-- The slideshow -->
-					  <div class="carousel-inner row">
-					    <div class="carousel-item active">
-					      <div class="row">
-					      	<div class="col-md-4">
-					      		<img src="../images/comment1.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
-					      		<div class="div-round comment-div bg-black"><i class="far fa-comment-alt"></i></div>
-					      	</div>
-					      	<div class="col-md-8">
-					      		<div class="comment-box">
-					      		<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-					      		
-					      		<h3 class="name-comment font-weight-light"><b>MR. GATE -</b> SEO expert </h3>
-					      	</div>
-					      	</div>
-					      </div>
-					    </div>
-					    <div class="carousel-item">
-					      <div class="row">
-					      	<div class="col-md-4">
-					      		<img src="../images/comment1.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
-					      		<div class="div-round comment-div bg-black"><i class="far fa-comment-alt"></i></div>
-					      	</div>
-					      	<div class="col-sm-8">
-					      		<div class="comment-box">
-					      		<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-					      		
-					      		<h3 class="name-comment font-weight-light"><b>MR. GATE -</b> SEO expert </h3>
-					      	</div>
-
-					      	</div>
-					      </div>
-					    </div>
-					    <div class="carousel-item active">
-					      <div class="row">
-					      	<div class="col-md-4">
-					      		<img src="../images/comment1.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
-					      		<div class="div-round comment-div bg-black"><i class="far fa-comment-alt"></i></div>
-					      	</div>
-					      	<div class="col-md-8">
-					      		<div class="comment-box">
-					      		<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-					      		
-					      		<h3 class="name-comment font-weight-light"><b>MR. GATE -</b> SEO expert </h3>
-					      	</div>
-
-					      	</div>
-					      </div>
-					    </div>    
-					  </div>
+					 	<div class="carousel-inner">
+						    <div class="carousel-item active">
+						    	<div class="container">
+						    		<div class="row">
+						    			<div class="col-md-4">
+						      <img src="../images/comment1.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
+						  			</div>
+						  			<div class="col-md-8">
+						  				<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						  			</div>
+						  	</div>
+						  </div>
+						    </div>
+						    <div class="carousel-item">
+						     <div class="container">
+						    		<div class="row">
+						    			<div class="col-md-4">
+						      <img src="../images/comment2.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
+						  			</div>
+						  			<div class="col-md-8">
+						  				<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						  			</div>
+						  	</div>
+						  </div>
+						    </div>
+						    <div class="carousel-item">
+						    	<div class="container">
+						    		<div class="row">
+						    <div class="col-md-4">
+						      <img src="../images/comment3.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
+						  			</div>
+						  			<div class="col-md-8">
+						  				<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						  			</div>
+						    </div>
+						</div>
+						</div>
+						  </div>
 
 					  <!-- Left and right controls -->
 					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-					    <i class="fas fa-arrow-left fa-2x"></i>
+					    <i class="fas fa-arrow-left fa-2x text-black"></i>
 					  </a>
 					  <a class="carousel-control-next" href="#demo" data-slide="next">
-					    <i class="fas fa-arrow-right fa-2x"></i>
+					    <i class="fas fa-arrow-right fa-2x text-black"></i>
 					  </a>
 
 					</div>
-      		</div>
       	</div>
       </div>
       <div class="onstore features bg-deep-blue">
@@ -2261,7 +2252,7 @@
       			 <p class="text-center text-white onstore-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
       			</div>
       			   <div class="boton-onstore">
-               <a href="#" class="btn-fat bg-white btn-main btn-position"><img src="../images/google-play-logo.png" class="img-fluid d-block mx-auto"></a>
+               <a href="#" class="btn-fat bg-white btn-main"><img src="../images/google-play-logo.png" class="img-fluid d-block mx-auto"></a>
                <a href="#" class="btn-fat bg-black btn-main btn-position"><img src="../images/app-store-logo.png" class="img-fluid d-block mx-auto"></a>
             </div>
       		</div>
