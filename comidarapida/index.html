@@ -12,25 +12,44 @@
       <meta name="robots" content="all">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Nerdcom Host - web hosting, domain names, web site, hosting, servers</title>
+
       <!--Font awesome -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <!-- Animate -->
       <link rel="stylesheet" href="animate.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <!-- Carrusel-->
+      <link rel="stylesheet" href="Carousel%201%20%C2%B7%20Intro%20to%20CSS%203D%20transforms%20%E2%80%BA%20Examples_files/style.css" media="screen">
+
       <!--Material icon -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+         rel="stylesheet">
+         <!--Google Fonts Poppin -->
+         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> <script src="dist/wow.js"></script>
+             <script>
+                wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+                 wow.init();
+              </script> 
       <style>
-      @font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-}
+         @font-face {
+         font-family: 'Material Icons';
+         font-style: normal;
+         font-weight: 400;
+         src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+         src: local('Material Icons'),
+         local('MaterialIcons-Regular'),
+         url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+         url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+         url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+         }
          @font-face {
          font-family: 'Open Sans';
          font-style: italic;
@@ -300,6 +319,30 @@
          font-family: 'Font Awesome 5 Free';
          font-weight: 900
          }
+         .material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
          @font-face {
          font-family: 'Font Awesome 5 Brands';
          font-style: normal;
@@ -410,7 +453,7 @@
          }
          body {
          margin: 0;
-         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-family: 'Poppins', sans-serif;;
          font-size: 1rem;
          font-weight: 400;
          line-height: 1.5;
@@ -495,6 +538,98 @@
          padding-left: 15px;
          margin-right: auto;
          margin-left: auto
+         }
+         @media (max-width:376px) {
+            .why-col{
+               padding: 10 !important;
+               margin-bottom: 0 !important;
+            }
+            .video{
+               width: 100%;
+               height: 350px !important;
+            }
+            .container-footer{
+               padding: 0 !important;
+
+            }
+            .btn-doubt{
+               width:98% !important;
+            }
+            .comment-text{
+               width: 100% !important;
+            }
+            .comment-box{
+               width: 100% !important;
+            }
+            .circle-why{
+               width: 60px !important;
+               height: 60px !important;
+               line-height: 60px !important;
+               font-size:1em !important;
+            }
+            .border-dotted{
+               height: 100%;
+            }
+            
+            .btn-subscribir{
+               width: 58px !important;
+               height: auto;
+               padding:7px 10px !important;
+               margin-left: -70px !important;
+
+            }
+            .play  i{
+            width: 100px !important;
+            height: auto;
+         }
+         .container-w{
+            width: 10% !important;
+            left: 0%;
+
+         }
+         .why-title{
+            font-size: 1.5em !important;
+            padding-left:25px;
+            margin: 10px !important;
+         }
+         .testimonial .subtitle-t{
+            font-size: 2.5em !important;
+         }
+         .video .img-video-bg::before{
+            height:350px !important;
+         }
+         .img-video-bg{
+            height:350px !important;
+         }
+            .boton-onstore{ width: 100% !important; }
+            .boton-onstore .btn-main{
+               display: inline-block;
+               width: 49% !important;
+               height: auto;
+               margin: 0px !important;
+               padding-left: 10px;
+               padding-right: 10px;
+            }
+            .boton-onstore .btn-main img{
+               width: 80px;
+               height: auto;
+            }
+            .title-card{
+               font-size:14px;
+            }
+            .row{
+               width: 100%;
+               margin:0 !important;
+            }
+            .input-s{
+               width: 95% !important;
+            }
+            .input-subscribir{
+               width: 98% !important;
+            }
+            .subtitle-t{
+               width: 100%;
+            }
          }
          @media (min-width:576px) {
          .container {
@@ -1524,8 +1659,8 @@
          }
          /*Estilos por sofia*/
          .principal-banner{
-         background-image: url('../images/71.jpg');
-         background-size: cover;
+          background-color: #444444;
+          color:#fff;
          width: 100%;
          }
          .banner-title{
@@ -1546,7 +1681,7 @@
          top:170px;
          left: 50px;
          }
-          .btn-main{
+         .btn-main{
          display: inline-block;
          margin-right:1.2em;
          }
@@ -1572,8 +1707,8 @@
          }
          .features{
          background-color:#F2F5F8;
-         padding-top: 130px;
-         padding-bottom: 130px;
+         padding-top: 30px;
+         padding-bottom: 30px;
          }
          .subtitle-t{
          color: #000;
@@ -1583,9 +1718,24 @@
          }
          .cards-features{padding:10px;}
          .card-white{
-         background-color: #fff;	
+         background-color: #fff; 
          padding: 20px 20px;
+        -webkit-transition: opacity .4s linear;
+         transition: opacity .4s linear;
+       opacity: 5;
          }
+         .card-white:hover {
+            background-color: #D62E43;
+            color: #fff !important;
+            opacity: 1;
+            z-index: -1;
+         }
+         .card-white:hover > .div-round{
+         background-color: #fff;
+         color: #D62E43;
+         }
+          .card-white:hover > .title-card{ color:#fff; } 
+          .card-white:hover > .description-card{ color:#fff; }
          .div-round{
          width:70px;
          height:70px;
@@ -1597,8 +1747,8 @@
          margin-bottom: 1em;
          }
          .div-round:hover{
-         background-color: #D62E43;;
-         color:#000;
+         background-color:#fff; 
+         color:#D62E43;
          }
          .div-round i {
          text-align: center !important;
@@ -1620,8 +1770,9 @@
          background-position: right top;
          background-attachment: fixed;
          width: 100%;
-         height: 530px !important;
+         height: 600px;
          }
+
          .bg-img-a{
          width: 100%;
          height: auto;
@@ -1656,7 +1807,7 @@
          top:-20px;
          }
          .play i{
-         font-size: 10em !important;
+         font-size: 10em;
          text-align: center;
          color:#000 !important;
          }
@@ -1697,7 +1848,7 @@
          text-align: center;
          }
          .circle-why i{
-         	font-weight: lighter !important;
+         font-weight: lighter !important;
          }
          .why-title{
          color: #666666;
@@ -1717,7 +1868,7 @@
          font-weight:bold !important;
          }
          .mg-b{
-         margin-bottom: 1.5em;
+         margin-bottom: 2em;
          }
          .img-why{
          position: absolute;
@@ -1788,12 +1939,11 @@
          }
          }
          .card-header{
-         
          background-color:#fff!important;
          }
          .card-header a {color:#000; 
-         	font-weight:bold; 
-         	font-size:1.5em; 
+         font-weight:bold; 
+         font-size:1.5em; 
          }
          .text-faq{
          color: rgb(117, 117, 117);
@@ -1804,133 +1954,415 @@
          margin-bottom:1em;
          }
          .pad{
-         	padding: 1.98em 1.25em !important;
+         padding: 1.98em 1.25em !important;
          }
          .title-doubt{
-         	color: #666666;
-			margin: 0;
-			margin-bottom: 1.5em;
-			text-transform: capitalize;
-			font-weight: 400;
-			font-size: 2.571em;
-			margin-bottom: 32px;
-			line-height: 1.2;
+         color: #666666;
+         margin: 0;
+         margin-bottom: 1.5em;
+         text-transform: capitalize;
+         font-weight: 400;
+         font-size: 2.571em;
+         margin-bottom: 32px;
+         line-height: 1.2;
          }
          .input-doubt{
-         	width: 100%;
-			height: 60px;
-			background-color: #FFFFFF;
-			border: 1px solid #DDDDDD;
-			border-radius: 0;
-			padding: 0 25px;
-			-webkit-transition: all .4s linear;
-			transition: all .4s linear;
-			display: block;
-			margin-bottom: 15px;
+         width: 100%;
+         height: 60px;
+         background-color: #FFFFFF;
+         border: 1px solid #DDDDDD;
+         border-radius: 0;
+         padding: 0 25px;
+         -webkit-transition: all .4s linear;
+         transition: all .4s linear;
+         display: block;
+         margin-bottom: 15px;
          }
          .input-doubt:hover{
-         	background-color: #fff;
-         	border:none;
-         	box-shadow: 0 18px 32px rgba(0,0,0,.28); 
+         background-color: #fff;
+         border:none;
+         box-shadow: 0 18px 32px rgba(0,0,0,.28); 
          }
          .doubt{
-         	padding: 30px 10px;
+         padding: 30px 10px;
          }
          .text-area{
-         	height: 180px;
-			padding: 25px;
+         height: 180px;
+         padding: 25px;
          }
          .text-area:hover{
-         	background-color: #fff;
-         	border:none;
-         	box-shadow: 0 18px 32px rgba(0,0,0,.28); 
+         background-color: #fff;
+         border:none;
+         box-shadow: 0 18px 32px rgba(0,0,0,.28); 
          }
          .btn-doubt{
-         	color:#fff;
+         color:#fff;
          }
          .onstore{
-         	background-image: url('../images/round-bg.png');
-    		background-repeat: no-repeat;
-    		background-size: cover
-    		
-			position: relative;
-			background-position: center center;
-		}
+         background-image: url('../images/round-bg.png');
+         background-repeat: no-repeat;
+         background-size: cover
+         position: relative;
+         background-position: center center;
+         }
          .onstore-description{
-         	margin-bottom: 66px;
-         	line-height: 2;
-         	font-weight: 400;
+         margin-bottom: 66px;
+         line-height: 2;
+         font-weight: 400;
          }
          .bg-deep-blue{background-color: #232838;}
          .div-onstore-description{
-         	width:700px;
+         width:700px;
          }
          .boton-onstore{
-         	width: 550px;
-         	margin: 0 auto !important;
+         width: 530px;
+         margin: 0 auto 100px !important;
+
          }
          .font-weight-light{
-         	font-weight: lighter !important; 
+         font-weight: lighter !important; 
          }
          .bg-circle-x{
          background-image: url(../images/new-2017__state3-circles-bg.svg);
          background-repeat: no-repeat;
          background-size: cover;
-         padding-top:30px;
-         padding-bottom:30px;
+         
          }
          .comment-div{
-         	box-shadow: 0 30px 59px rgba(0,0,0,.17);
-			text-align: center;
-			line-height: 68px;
-			color: #FEFEFE;
-			font-size: 1.929em;
-			top: 10px;
-			position: absolute;
-			right: 0px;
+         box-shadow: 0 30px 59px rgba(0,0,0,.17);
+         text-align: center;
+         line-height: 68px;
+         color: #FEFEFE;
+         font-size: 1.929em;
+         top: 0px;
+         position: absolute;
+         right: 70px;
          }
          .img-comment{
-         	width: 120px;
-			height: 120px;
-			border-radius: 100%;
-			background-color: #fff;
-			box-shadow: 0 18px 32px rgba(0,0,0,.28);
+         width: 120px;
+         height: 120px;
+         border-radius: 100%;
+         background-color: #fff;
+         box-shadow: 0 18px 32px rgba(0,0,0,.28);
+         z-index: 1000;
          }
          .comment-text{
-         	font-weight: 400;
-			color: #000;
-			margin: 0;
-			    margin-bottom: 0px;
-			margin-bottom: 30px;
+         font-weight: 400;
+         color: #000;
+         margin: 0;
+         margin-bottom: 0px;
+         margin-bottom: 30px;
+         font-size:1.2em;
+         line-height: 1.5;
+         text-align: justify !important;
          }
          .comment-text::before{
-         	content: '\f1b2';
+         content: '\f1b2';
          -webkit-transform: rotate(-180deg);
          transform: rotate(-180deg);
          }
          .comment-text::after{
-         	content: '\f1b2';
+         content: '\f1b2';
          }
          .rating-star{
-         	color:#FFDC3B;
-         	margin-right:5px;
+         color:#FFDC3B;
+         margin-right:5px;
          }
          .star-comment{
-         	display: inline-block;
-         	width: 100px;
+         display: inline-block;
+         width: 100px;
          }
          .chiqui-comment{
-         	width: 50px;
-         	height: 50px;
+         width: 50px;
+         height: 50px;
          }
          .text-black{
-         	color:#000 !important;}
+         color:#000 !important;}
          .btn-position{
-         	width: 242px;
-         	height: 73px;
+         width: 242px;
+         height: 73px;
          }
-              </style>
+         .comment-box{
+            width:80%;
          }
+         .row-b{
+            width:100%;
+            margin: 0 !important
+         }
+         .name-comment{
+            text-align: center !important;
+            font-size:1.2em;
+         }
+         .navi-boto{
+            width: 100%;
+            display: inline-block;
+            
+            top:200px;
+            position: relative;
+            height: auto
+            
+         }
+         .right-c{
+            position: absolute;
+            right: 50px;
+         }
+         .left-c{
+            position: absolute;
+            left: 50px;
+         }
+         /*Para el carrusel*/
+           .container-w {
+      background-image: url(../images/phone-mockup.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 440px;
+      height: 750px;
+      position: absolute;
+      left: 20%;
+      transform: translateX(-50%);
+      top: -78px;
+      position: relative;
+      margin: 0 auto;
+      -webkit-perspective: 1100px;
+         -moz-perspective: 1100px;
+           -o-perspective: 1100px;
+              perspective: 1100px;
+    }
+
+    #carousel {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      -webkit-transform: translateZ( -288px );
+         -moz-transform: translateZ( -288px );
+           -o-transform: translateZ( -288px );
+              transform: translateZ( -288px );
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+    }
+
+    #carousel figure {
+   position: absolute;
+   width: 280px;
+   height: 100%;
+   left: 10px;
+   top: 115px;
+   line-height: 108px;
+   font-size: 80px;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+    }
+    
+ 
+
+    #carousel figure:nth-child(1) {
+      -webkit-transform: rotateY(   0deg ) translateZ( 288px );
+         -moz-transform: rotateY(   0deg ) translateZ( 288px );
+              transform: rotateY(   0deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(2) {
+      -webkit-transform: rotateY(  40deg ) translateZ( 288px );
+         -moz-transform: rotateY(  40deg ) translateZ( 288px );
+              transform: rotateY(  40deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(3) {
+      -webkit-transform: rotateY(  80deg ) translateZ( 288px );
+         -moz-transform: rotateY(  80deg ) translateZ( 288px );
+              transform: rotateY(  80deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(4) {
+      -webkit-transform: rotateY( 120deg ) translateZ( 288px );
+         -moz-transform: rotateY( 120deg ) translateZ( 288px );
+              transform: rotateY( 120deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(5) {
+      -webkit-transform: rotateY( 160deg ) translateZ( 288px );
+         -moz-transform: rotateY( 160deg ) translateZ( 288px );
+              transform: rotateY( 160deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(6) {
+      -webkit-transform: rotateY( 200deg ) translateZ( 288px );
+         -moz-transform: rotateY( 200deg ) translateZ( 288px );
+              transform: rotateY( 200deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(7) {
+      -webkit-transform: rotateY( 240deg ) translateZ( 288px );
+         -moz-transform: rotateY( 240deg ) translateZ( 288px );
+              transform: rotateY( 240deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(8) {
+      -webkit-transform: rotateY( 280deg ) translateZ( 288px );
+         -moz-transform: rotateY( 280deg ) translateZ( 288px );
+              transform: rotateY( 280deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(9) {
+      -webkit-transform: rotateY( 320deg ) translateZ( 288px );
+         -moz-transform: rotateY( 320deg ) translateZ( 288px );
+              transform: rotateY( 320deg ) translateZ( 288px );
+    }
+    .img-r{
+      position: absolute;
+    }
+    .img-random1{
+      left: 10px;
+      top: 150px;
+      width: 93px;
+    }
+    .img-random2{
+      
+      right: 10px;
+      top: 83px;
+      width: 112px;
+    }
+    .img-random3{
+      top:-90px;
+      left: 38%;
+      width: 119px;
+    }
+    .img-random4{
+      top: -30px;
+      left: -10px;
+      right: 0;
+      width: 73px;
+   }
+   .img-random5{
+      right: 100px;
+      top: -20px;
+      width: 129px;
+   }
+   .img-random6{
+      top: -40px;
+      left: inherit;
+      right: 30px;
+      width: 67px;
+   }
+   .img-random7{
+      left: 80px;
+      top: -110px;
+      width: 84px;
+   }
+   .img-random9{
+   top:-120px;
+    right: 159px;
+    width: 70px;
+}
+.img-random11{
+   top: 10px;
+left: 50px;
+width: 149px;
+}
+.img-random15{
+   left: 18%;
+   width: 25px;
+}
+.img-random16{
+width: 25px;
+top:-60px;
+right: 100px;
+}
+.img-random17{
+   top:45px;
+   right:40px;
+   width:25px;
+}
+.img-random12{
+   left: 0;
+   top: 80px;
+   width:20px;
+}
+.img-random13{
+   left: 52%;
+   top:55px;
+   width: 28px;
+}
+.img-random8{
+   left:-40px;
+top: 100px;
+width: 64px
+}
+.img-video-bg{
+   background-color:rgba(67, 69, 81, 0.4);
+         width:100%;
+         height: 600px;
+         padding:50px 0;
+}
+.img-video-bg::before{
+   position: absolute;
+content: "";
+right: 0;
+height: 100%;
+width: 100%;
+background-image: url(../images/video-bg-overlay.png);
+background-repeat: no-repeat;
+background-position: 100% 100%;
+background-size: 50%;
+z-index: 2;
+overflow:hidden;
+}
+.img-moven{
+   background-image: url('../images/fun-factory.png');
+   background-repeat: repeat-x;
+   z-index: 1000;
+}
+.img-moven2{
+   background-image: url('../images/fun-factory-2.png');
+   background-repeat: repeat-x;
+   z-index: 1000;
+}
+.bg-grow{
+   background-color: #F4F4F4;
+   z-index: 1;
+}
+.chose{
+   background-image: url("../images/choose-bg.png");
+   background-repeat: repeat-y;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+
+}
+.bg-gray-c{
+   background-color: #ccc !important;
+   z-index: 1;
+}
+.border-dotted{
+position: relative;
+display: block;
+height: 100%;
+width: 100%
+}
+.border-dotted::before{
+      border-left:1px dotted #E24B48;
+   position: absolute;
+content: "";
+top: 0;
+left: 50%;
+right: 0;
+bottom: 0;
+height: 100%;
+}
+.img-avaible{
+   width: 80%;
+margin: 0 auto;
+position: absolute;
+
+top: -70px;
+left: 10%;
+}
+.div-acostada{
+   height: 190px;
+   width: 100%;
+   position: static;
+}
+      </style>
       <link rel="canonical" href="https://nerdcom.host/">
       <link rel="shortcut icon" href="../images/favicon.ico">
    </head>
@@ -1943,23 +2375,43 @@
             <h1 class="banner-title">Obtenga su descarga <b>gratuita</b> de la App de restaurante </h1>
             <p class="text-banner">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
             <div class="boton-banner">
-               <a href="#" class="btn-fat bg-white btn-main"><img src="../images/google-play-logo.png" class="img-fluid d-block mx-auto"></a>
+               <a href="#" class="btn-fat bg-white btn-main "><img src="../images/google-play-logo.png" class="img-fluid d-block mx-auto wow fadeIn"></a>
                <a href="#" class="btn-fat bg-black btn-main"><img src="../images/app-store-logo.png" class="img-fluid d-block mx-auto"></a>
             </div>
          </div>
       </div>
       <div class="features">
          <div class="container">
-            <h2 class="subtitle-t text-center">FEATURES</h2>
+            
+            <h2 class="subtitle-t text-center wow fadeInDown" data-wow-delay="3000ms" style="margin-bottom: 2.5em;">FEATURES</h2>
             <div class="row">
-               <div class="col-md-6">
-               	<div class="wow bounceInUp">
-                  <img src="../images/feature-app-screenshort.png" class="img-fluid mx-auto d-block" alt="app-phone">
-              </div>
+               
+               <div class="col-md-6 bounce" style="padding-top:2.5em;">
+                  <img src="../images/icon-3.png" class="img-fluid img-random3 img-r" />
+               <img src="../images/icon-9.png" class="img-fluid img-random9 img-r"/>
+                  <div class="wow bounceInUp" data-wow-delay="3000ms" >
+                     <img src="../images/feature-app-screenshort.png" data-wow-delay="3000mss"  class="img-fluid mx-auto d-block wow fadeIn" alt="app-phone"/>
+                     <img src="../images/icon-1.png" class="img-fluid img-random1 img-r"/>
+                     <img src="../images/icon-2.png" class="img-fluid img-random2 img-r"/>
+                      
+                     <img src="../images/icon-4.png" class="img-fluid img-random5 img-r"/>
+                     <img src="../images/icon-5.png" class="img-fluid img-random4 img-r"/>
+                     <img src="../images/icon-6.png" class="img-fluid img-random6 img-r"/>
+                      <img src="../images/icon-7.png" class="img-fluid img-random7 img-r"/>
+                     <img src="../images/icon-11.png" class="img-fluid img-random11 img-r"/>
+                   
+                     <img src="../images/15.png" class="img-fluid img-random16 img-r"/>
+                      <img src="../images/15.png" class="img-fluid img-random17 img-r"/>
+                     <img src="../images/12.png" class="img-fluid img-random12 img-r"/>
+                     <img src="../images/13.png" class="img-fluid img-random13 img-r"/>
+                     <img src="../images/icon-8.png" class="img-fluid img-random8 img-r"/>
+                     <img src="../images/icon-11.png" class="img-fluid img-random11 img-r"/>
+
+                  </div>
                </div>
                <div class="col-md-6 ">
                   <div class="row">
-                     <div class="col-6 cards-features">
+                     <div class="col-12 col-md-6 cards-features wow fadeIn" data-wow-delay="3000ms" >
                         <div class="card-white">
                            <div class="div-round mx-auto d-block">
                               <i class="fas fa-utensils mx-auto d-block fa-2x"></i>
@@ -1968,7 +2420,7 @@
                            <p class="description-card">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
                         </div>
                      </div>
-                     <div class="col-6 cards-features">
+                     <div class="col-12 col-md-6 cards-features wow fadeIn" data-wow-delay="2000ms" data-wow-delay="3000ms">
                         <div class="card-white">
                            <div class="div-round mx-auto d-block">
                               <i class="fas fa-align-center mx-auto d-block fa-2x"></i>
@@ -1979,8 +2431,8 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-6 cards-features">
-                        <div class="card-white">
+                     <div class="col-12 col-md-6 cards-features" >
+                        <div class="card-white wow fadeIn" data-wow-delay="2000ms" >
                            <div class="div-round mx-auto d-block">
                               <i class="fas fa-wifi mx-auto d-block fa-2x"></i>
                            </div>
@@ -1988,7 +2440,7 @@
                            <p class="description-card">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
                         </div>
                      </div>
-                     <div class="col-6 cards-features">
+                     <div class="col-12 col-md-6 cards-features" data-wow-delay="2000ms" >
                         <div class="card-white">
                            <div class="div-round mx-auto d-block">
                               <i class="far fa-image mx-auto d-block fa-2x"></i>
@@ -2002,8 +2454,8 @@
             </div>
          </div>
       </div>
-      <div class="video">
-         <div class="back-b  padding-section ">
+      <div class="video ">
+         <div class="img-video-bg padding-section ">
             <div class="container">
                <div class="row">
                   <div class="col-12">
@@ -2016,250 +2468,298 @@
             </div>
          </div>
       </div>
-      <div class="features">
-         <div class="img-moven">
-            <div class="container">
-               <div class="row">
-                  <div class="col-12 moven-div">
+      <div class="bg-grow">
+            <div class="img-moven">
+               <div class="img-moven2">
+                  <div class="container" style="z-index: 1; padding-top: 130px; padding-bottom: 130px;">
                      <div class="row">
-                        <div class="col-md-3">
-                           <i class="fas fa-user  fa-2x d-block mx-auto text-center"></i>
-                           <h5 class="metrics text-center">2.5 M</h5>
-                           <p class="text-center metrics-d">Usuarios</p>
-                        </div>
-                        <div class="col-md-3">
-                           <i class="fas fa-download fa-2x d-block mx-auto text-center"></i>
-                           <h5 class="metrics text-center">3.6 M</h5>
-                           <p class="text-center metrics-d">Descargas</p>
-                        </div>
-                        <div class="col-md-3">
-                           <i class="fas fa-star text-center fa-2x d-block mx-auto"></i>
-                           <h5 class="metrics text-center">1.5 K</h5>
-                           <p class="text-center metrics-d">Revisiones</p>
-                        </div>
-                        <div class="col-md-3">
-                           <i class="fab fa-xbox text-center fa-2x d-block mx-auto"></i>
-                           <h5 class="metrics text-center">100</h5>
-                           <p class="text-center metrics-d">Clientes</p>
+                        <div class="col-12 moven-div">
+                           <div class="row">
+                              <div class="col-md-3 col-6">
+                                 <i class="fas fa-user  fa-2x d-block mx-auto text-center"></i>
+                                 <h5 class="metrics text-center">2.5 M</h5>
+                                 <p class="text-center metrics-d">Usuarios</p>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                 <i class="fas fa-download fa-2x d-block mx-auto text-center"></i>
+                                 <h5 class="metrics text-center">3.6 M</h5>
+                                 <p class="text-center metrics-d">Descargas</p>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                 <i class="fas fa-star text-center fa-2x d-block mx-auto"></i>
+                                 <h5 class="metrics text-center">1.5 K</h5>
+                                 <p class="text-center metrics-d">Revisiones</p>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                 <i class="fab fa-xbox text-center fa-2x d-block mx-auto"></i>
+                                 <h5 class="metrics text-center">100</h5>
+                                 <p class="text-center metrics-d">Clientes</p>
+                              </div>
+                           </div>
                         </div>
                      </div>
+                  </div>
+                 </div>
+         </div>
+      </div>
+      <div class="bg-white">
+      <div class="chose">
+         <div class="">
+            <h2 class="subtitle-t text-center">¿Por qué escogernos?</h2>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 ">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-2  col-3 no-padding why-col">
+                              <div class="circle-why">
+                                 <i class="far fa-thumbs-up fa-lg"></i>
+                              </div>
+                               <span class="border-dotted"></span>
+                           </div>
+                           <div class="col-md-9 col-8 no-padding why-col mg-b">
+                              <h4 class="why-title">Facil de usar</h4>
+                              <p class="description-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                           </div>
+                           <div class="col-md-2 col-3 no-padding why-col">
+                              <div class="circle-why">
+                                 <i class="fab fa-sketch fa-lg"></i>
+                              </div>
+                                   <span class="border-dotted"></span>
+                           </div>
+                           <div class="col-md-9 col-8 no-padding why-col mg-b">
+                              <h4 class="why-title">Impresionante UI & UX diseños </h4>
+                              <p class="description-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                           </div>
+                           <div class="col-md-2 col-3 no-padding why-col mg-b">
+                              <div class="circle-why">
+                                 <i class="fas fa-award fa-lg"></i>
+                              </div>
+
+                           </div>
+                           <div class="col-md-9 col-8 no-padding why-col mg-b">
+                              <h4 class="why-title">Premio a  la Mejor Aplicacion</h4>
+                              <p class="description-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <img src="../images/choose-us-screenshort-1.png" class="wow fadeInRight img-why" data-wow-delay="4000ms" data-wow-duration="4s"
+                        alt="Apps phone" data-wow-iteration="3"/>
+                     <img src="../images/choose-us-screenshort-2.png" class="wow fadeInRight" data-wow-delay="4000ms" data-wow-duration="2000ms" alt="Apps Craft Why Chose Image Screenshort" style="width: 375px;">
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <div class="features bg-white">
-         <h2 class="subtitle-t text-center">¿Por qué escogernos?</h2>
+  </div>
+      <div class="faq features">
          <div class="container">
-            <div class="row">
-               <div class="col-md-6 ">
-               		<div class="container">
-	                  <div class="row">
-	                     <div class="col-md-2 no-padding">
-	                        <div class="circle-why">
-	                           <i class="far fa-thumbs-up fa-lg"></i>
-	                        </div>
-	                     </div>
-	                     <div class="col-md-9 no-padding mg-b">
-	                        <h4 class="why-title">Facil de usar</h4>
-	                        <p class="description-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-	                     </div>
-	                     <div class="col-md-2 no-padding mg-b">
-	                        <div class="circle-why">
-	                         <i class="fab fa-sketch fa-lg"></i>
-	                        </div>
-	                     </div>
-	                     <div class="col-md-9 no-padding mg-b">
-	                        <h4 class="why-title">Impresionante UI & UX diseños </h4>
-	                        <p class="description-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-	                     </div>
-	                     <div class="col-md-2 no-padding mg-b">
-	                        <div class="circle-why">
-	                          <i class="fas fa-award fa-lg"></i>
-	                        </div>
-	                     </div>
-	                     <div class="col-md-9 no-padding mg-b">
-	                        <h4 class="why-title">Premio a  la Mejor Aplicacion</h4>
-	                        <p class="description-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-	                     </div>
-	                  </div>
-	              </div>
-               </div>
-               <div class="col-md-6">
-                  <img src="../images/choose-us-screenshort-1.png" class="wow fadeInRight img-why" data-wow-delay=".8s"
+            <h2 class="subtitle-t text-center">Pantallas de la App</h2>
+               <div id="options" class="navi-boto">
+          <div id="navigation" >
+            <button id="previous" class="left-c div-round bg-black" data-increment="1"><i class="fas fa-arrow-left fa-2x text-white"></i></button>
+            <button id="next" data-increment="-1" class="right-c div-round bg-black" ><i class="fas fa-arrow-right fa-2x text-white" ></i></button>
+          </div>
+         </div>
+            <section class="container-w">
+          <div id="carousel" style="transform: translateZ(-460px) rotateY(-270deg);">
+            <figure style="opacity: 1; transform: rotateY(0deg) translateZ(460px);"><img src="../images/slider-img-2.png" class="img-fluid">         </figure>
 
+            <figure style="opacity: 1; transform: rotateY(90deg) translateZ(460px);"><img src="../images/slider-img-1.png" class="img-fluid"></figure>
+            <figure style="opacity: 1; transform: rotateY(180deg) translateZ(460px);"><img src="../images/slider-img-4.png" class="img-fluid"></figure>
+            <figure style="opacity: 1; transform: rotateY(270deg) translateZ(460px);"><img src="../images/slider-img-5.png" class="img-fluid"></figure>
+            <figure style="opacity: 1; transform: rotateY(360deg) translateZ(460px);"><img src="../images/slider-img-3.png" class="img-fluid">         </figure>
 
+          </div>
+        </section>
 
-                   alt="Apps phone" />
-                  <img src="../images/choose-us-screenshort-2.png" class="wow fadeInRight" data-wow-delay=".4s" alt="Apps Craft Why Chose Image Screenshort" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight; width: 375px;">
-               </div>
-            </div>
+               
          </div>
       </div>
       <div class="features bg-white">
          <div class="container">
             <h2 class="subtitle-t text-center">Precios</h2>
             <div class="row">
-               <div class="col-12 col-lg-4 prices-plan b padding-0  rounded text-center padding-side">
-                  <div class="prices-plan-offer border rounded mt-5">
-                     <h2 class="h4 text-capitalize mb-3 font-weight-light">BASIC</h2>
-                     <ul class="prices-plan-features nav flex-column text-center text-gray-700 list-unstyled font-weight-bold">
-                        <li class="nav-item"><span class="nav-link font-weight-bold ">2 vCores </span></li>
-                        <li class="nav-item"><span class="nav-link font-weight-bold ">3.1 GHz</span></li>
-                        <li class="nav-item"><span class="nav-link font-weight-bold ">7 GB of RAM</span></li>
-                        <li class="nav-item"><span class="nav-link font-weight-bold ">50 GB Local SSD RAID</span></li>
-                     </ul>
-                     <div class="container">
-                        <p class="text-center font-weight-bold "> Desde</p>
+               <div class="col-12 col-lg-4 prices-plan text-center no-padding wow fadeIn" data-wow-delay="3000ms"data-wow-duration="4000ms" >
+                     <div class="prices-plan-offer border rounded bg-white">
+                        <p class="h4 text-capitalize mb-3 text-gray-700">Plan Inicia</p>
+                        <p class="font-weight-normal mb-5 text-gray-700">Facilita la administración a emprendedores.</p>
+                        <div class="prices-plan-offer-old mb-2">
+                           <p class="d-inline text-gray-700"><del>$15.00</del></p>
+                           <span class="bg-black rounded-circle text-white font-weight-bold spacer-out-left-5">10%</span>
+                        </div>
                         <div class="prices-plan-offer-price">
                            <div class="container-fluid">
                               <div class="row">
-                                 <div class="col-7 no-padding text-right"><span class="sym-dollar display-4 text-green">44</span></div>
+                                 <div class="col-7 no-padding text-right"><span class="sym-dollar display-4">13</span></div>
                                  <div class="col-5 align-self-center no-padding pl-2 text-left text-gray-700">
-                                    <div class="d-block "><span>00</span></div>
-                                    <div class="d-block "><span>/MES</span></div>
+                                    <div class="d-block"><span>5</span></div>
+                                    <div class="d-block"><span>/MES</span></div>
                                  </div>
                               </div>
                            </div>
                         </div>
+                        <p class="text-gray-700 mb-5">Ahorra $18 al pagar 12 meses*</p>
+                        <a href="https://panel.nerdcom.host/cart.php?a=add&pid=218&domainoption=subdomain" target="_new" class="btn mb-3 btn-black btn-fat">Pruébalo ahora</a>
+                        <p class="">30 días de devolución 100% garantizada .</p>
+                        <p class="">(no incluye impuesto)</p>
                      </div>
-                     <a href="./prices.html" class="btn mb-3 text-white bg-black btn-fat  mt-4">Ordenar ahora</a>
                   </div>
-               </div>
-               <div class="col-12 col-lg-4 padding-0 prices-plan  rounded text-center">
-                  <div class="prices-plan-offer  rounded tabla-middle   mt-3">
-                     <h2 class="h4 text-capitalize mb-3 font-weight-light ">STANDARD</h2>
-                     <ul class="prices-plan-features nav flex-column text-center text-gray-700 list-unstyled font-weight-bold">
-                        <li class="nav-item"><span class="nav-link font-weight-bold  ">4 vCores </span></li>
-                        <li class="nav-item"><span class="nav-link font-weight-bold  ">3.1 GHz</span></li>
-                        <li class="nav-item"><span class="nav-link font-weight-bold  ">15 GB of RAM</span></li>
-                        <li class="nav-item"><span class="nav-link font-weight-bold  ">100 GB Local SSD RAID</span></li>
-                     </ul>
-                     <div class="container">
-                        <p class="text-center font-weight-bold "> Desde</p>
+                  <div class="col-12 no-padding col-lg-4 prices-plan text-center prices-plan--featured  wow fadeIn" data-wow-delay="3000ms"data-wow-duration="4000ms">
+                     <div class="prices-plan-offer border rounded bg-white">
+                        <h2 class="h4 text-capitalize mb-3 text-green">Plan Startup</h2>
+                        <p class="font-weight-normal mb-5 text-gray-700">Enfocado en aumentar tu productividad.</p>
+                        <div class="prices-plan-offer-old mb-2">
+                           <p class="d-inline text-gray-700"><del>$25.00</del></p>
+                           <span class="bg-green rounded-circle text-white font-weight-bold spacer-out-left-5">20%</span>
+                        </div>
                         <div class="prices-plan-offer-price">
                            <div class="container-fluid">
                               <div class="row">
-                                 <div class="col-7 no-padding text-right"><span class="sym-dollar display-4 text-green">86</span></div>
+                                 <div class="col-7 no-padding text-right"><span class="sym-dollar display-4">20</span></div>
                                  <div class="col-5 align-self-center no-padding pl-2 text-left text-gray-700">
-                                    <div class="d-block "><span>00</span></div>
-                                    <div class="d-block "><span>/MES</span></div>
+                                    <div class="d-block"><span>00</span></div>
+                                    <div class="d-block"><span>/MES</span></div>
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <a href="./prices.html" class="btn mb-3 btn-green btn-fat  mt-4">Ordenar ahora</a>
+                        <p class="text-gray-700 mb-5">Ahorra $60 al pagar 12 meses*</p>
+                        <a href="https://panel.nerdcom.host/cart.php?a=add&pid=219&domainoption=subdomain" target="_new" class="btn mb-3 btn-green btn-fat text-white">Pruébalo ahora</a>
+                        <p class="">30 días de devolución 100% garantizada.</p>
+                        <p class="">(no incluye impuesto)</p>
                      </div>
+                     
                   </div>
-               </div>
-               <div class="col-12 col-lg-4 prices-plan padding-0 rounded text-center">
-                  <div class="prices-plan-offer border rounded mt-5">
-                     <h2 class="h4 text-capitalize mb-3 font-weight-light">ADVANCE</h2>
-                     <ul class="prices-plan-features nav flex-column text-center text-gray-700 list-unstyled font-weight-bold">
-                        <li class="nav-item"><span class="nav-link font-weight-bold ">8 vCores </span></li>
-                        <li class="nav-item"><span class="nav-link font-weight-bold ">3.1 GHz</span></li>
-                        <li class="nav-item"><span class="nav-link font-weight-bold ">30 GB of RAM</span></li>
-                        <li class="nav-item"><span class="nav-link font-weight-bold ">200 GB Local SSD RAID</span></li>
-                     </ul>
-                     <div class="container">
-                        <p class="text-center font-weight-bold"> Desde</p>
+                  <div class="col-12 col-lg-4 no-padding prices-plan text-center wow fadeIn" data-wow-delay="3000ms"data-wow-duration="4000ms">
+                     <div class="prices-plan-offer border rounded bg-white">
+                        <h2 class="h4 text-capitalize mb-3 text-gray-700">Plan Pro Full</h2>
+                        <p class="font-weight-normal mb-5 text-gray-700">Orientado Posicionar y dejar huella con tu marca.</p>
+                        <div class="prices-plan-offer-old mb-2">
+                           <p class="d-inline text-gray-700"><del>$45.00</del></p>
+                           <span class="bg-black rounded-circle text-white font-weight-bold spacer-out-left-5">30%</span>
+                        </div>
                         <div class="prices-plan-offer-price">
                            <div class="container-fluid">
                               <div class="row">
-                                 <div class="col-7 no-padding text-right"><span class="sym-dollar display-4 text-green">86</span></div>
+                                 <div class="col-7 no-padding text-right"><span class="sym-dollar display-4">31</span></div>
                                  <div class="col-5 align-self-center no-padding pl-2 text-left text-gray-700">
-                                    <div class="d-block "><span>00</span></div>
-                                    <div class="d-block "><span>/MES</span></div>
+                                    <div class="d-block"><span>5</span></div>
+                                    <div class="d-block"><span>/MES</span></div>
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <a href="./prices.html" class="btn mb-3 bg-black btn-fat text-white  mt-4">Ordenar ahora</a>
+                        <p class="text-gray-700 mb-5">Ahorra $140 al pagar 12 meses*</p>
+                        <a href="https://panel.nerdcom.host/cart.php?a=add&pid=220&domainoption=subdomain" target="_new" class="btn mb-3 btn-black btn-fat">Pruébalo ahora</a>
+                        <p class="">30 días de devolución 100% garantizada.</p>
+                        <p class="">(no incluye impuesto)</p>
                      </div>
+                    
                   </div>
-               </div>
             </div>
          </div>
       </div>
       </div>
       <div class="testimonial features bg-circle-x">
-      	<div class="container">
-      		<h2 class="subtitle-t text-center" style="color:#000;">TESTIMONIOS</h2>
-      			<div id="demo" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-					  <ul class="carousel-indicators">
-					    <li data-target="#demo" data-slide-to="0" class="active"><img src="../images/comment1.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment chiqui-comment"/></li>
-					    <li data-target="#demo" data-slide-to="1"><img src="../images/comment2.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment chiqui-comment"/></li>
-					    <li data-target="#demo" data-slide-to="2"><img src="../images/comment3.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment chiqui-comment"/></li>
-					  </ul>
-
-					  <!-- The slideshow -->
-					 	<div class="carousel-inner">
-						    <div class="carousel-item active">
-						    	<div class="container">
-						    		<div class="row">
-						    			<div class="col-md-4">
-						      <img src="../images/comment1.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
-						  			</div>
-						  			<div class="col-md-8">
-						  				<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						  			</div>
-						  	</div>
-						  </div>
-						    </div>
-						    <div class="carousel-item">
-						     <div class="container">
-						    		<div class="row">
-						    			<div class="col-md-4">
-						      <img src="../images/comment2.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
-						  			</div>
-						  			<div class="col-md-8">
-						  				<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						  			</div>
-						  	</div>
-						  </div>
-						    </div>
-						    <div class="carousel-item">
-						    	<div class="container">
-						    		<div class="row">
-						    <div class="col-md-4">
-						      <img src="../images/comment3.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
-						  			</div>
-						  			<div class="col-md-8">
-						  				<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						  			</div>
-						    </div>
-						</div>
-						</div>
-						  </div>
-
-					  <!-- Left and right controls -->
-					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-					    <i class="fas fa-arrow-left fa-2x text-black"></i>
-					  </a>
-					  <a class="carousel-control-next" href="#demo" data-slide="next">
-					    <i class="fas fa-arrow-right fa-2x text-black"></i>
-					  </a>
-
-					</div>
-      	</div>
-      </div>
-      <div class="onstore features bg-deep-blue">
-      	<div class="container">
-      		<div class="row f-width">
-      			 <h2 class="subtitle-t text-center text-white f-width">Ahora disponible en</h2>
-      			 <div class="div-onstore-description mx-auto d-block">
-      			 <p class="text-center text-white onstore-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-      			</div>
-      			   <div class="boton-onstore">
-               <a href="#" class="btn-fat bg-white btn-main"><img src="../images/google-play-logo.png" class="img-fluid d-block mx-auto"></a>
-               <a href="#" class="btn-fat bg-black btn-main btn-position"><img src="../images/app-store-logo.png" class="img-fluid d-block mx-auto"></a>
+         <div class="container">
+            <h2 class="subtitle-t text-center" style="color:#000;">TESTIMONIOS</h2>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              
+               <!-- The slideshow -->
+               <div class="carousel-inner">
+                  <div class="carousel-item active mg-b">
+                     <div class="container">
+                        <div class="row row-b">
+                           <div class="col-md-4 no-padding">
+                              <img src="../images/comment1.jpg" class="rounded-circle  d-block img-comment img-fluid mx-auto"/>
+                              <div class="div-round comment-div bg-black"><i class="far fa-comment-alt"></i></div>
+                           </div>
+                           <div class="col-md-8  col-12 no-padding">
+                              <div class="comment-box">
+                                 <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                 <h4 class="name-comment font-weight-light"><b>Mr. Gate -</b> Web design</h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row row-b">
+                           <div class="col-md-4 no-padding">
+                              <img src="../images/comment2.jpg" class="rounded-circle d-block img-fluid mx-auto img-comment"/>
+                              <div class="div-round comment-div bg-black"><i class="far fa-comment-alt"></i></div>
+                           </div>
+                           <div class="col-md-8 col-12">
+                              <div class="comment-box">
+                                 <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                 <h4 class="name-comment font-weight-light"><b>Mr. Gate -</b> Ux Design </h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row row-b">
+                           <div class="col-md-4 no-padding">
+                              <img src="../images/comment3.jpg" class="rounded-circle img-fluid mx-auto d-block img-comment"/>
+                              <div class="div-round comment-div bg-black"><i class="far fa-comment-alt"></i></div>
+                           </div>
+                           <div class="col-md-8 col-12 no-padding">
+                              <div class="comment-box">
+                                 <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                 <h4 class="name-comment font-weight-light"><b>Mr. Gate -</b> SEO expert </h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Left and right controls -->
+               <a class="carousel-control-prev" href="#demo" data-slide="prev">
+               <i class="fas fa-arrow-left fa-2x text-black"></i>
+               </a>
+               <a class="carousel-control-next" href="#demo" data-slide="next">
+               <i class="fas fa-arrow-right fa-2x text-black"></i>
+               </a>
+               <div class="row row-b">
+                  <div class="col-md-12 mt-5">
+                  
+           </div>
+               </div>
             </div>
-      		</div>
-      	</div>
-      	<figure style="transform: translateY(102.909px) translateX(-50%);">
-      		<img src="../images/now-avaible.jpg" class="img-fluid mx-auto d-blocks"/>
-      	</figure>
+         </div>
+      </div>
+      <div>
+      <div class="onstore features bg-deep-blue">
+         <div class="container">
+            <div class="row f-width">
+               <h2 class="subtitle-t text-center text-white f-width">Ahora disponible en</h2>
+               <div class="div-onstore-description mx-auto d-block">
+                  <p class="text-center text-white onstore-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+               </div>
+               <div class="boton-onstore">
+                  <a href="#" class="btn-fat bg-white btn-main"><img src="../images/google-play-logo.png" class="img-fluid d-block mx-auto"></a>
+                  <a href="#" class="btn-fat bg-black btn-main btn-position"><img src="../images/app-store-logo.png" class="img-fluid d-block mx-auto"></a>
+               </div>
+                           </div>
+         </div>
+
+         </div>
+         <div class="bg-white div-acostada">
+         <div class="container">
+            <div class="row">
+               <div class="col-12"><img src="../images/now-avi.png" class="img-fluid img-avaible"/></div>
+
+               
+            </div>
+         </div>
+     </div>
+         
       </div>
       <div class="features subscribe">
          <div class="container">
@@ -2269,7 +2769,7 @@
                   <form method="" name="subribir">
                      <div class="input-s mx-auto d-block">
                         <input type="email" name="" class="input-subscribir" placeholder="tucorreo@ejemplo.com" />
-                        <button type="submit" class="btn btn-fat bg-black btn-green" type="submit">Subscribirse</button>
+                        <button type="submit" class="btn btn-fat bg-black btn-green btn-subscribir" type="submit">Subscribirse</button>
                      </div>
                   </form>
                </div>
@@ -2280,7 +2780,7 @@
          <div class="container">
             <h2 class=" text-center subtitle-t font-weight-bold">FAQ</h2>
             <div class="row">
-               <div class="col-md-6">
+               <div class="col-md-6 wow fadeIn" data-wow-duration="5000ms" data-wow-delay="3000ms">
                   <div id="accordion">
                      <div class="card">
                         <div class="card-header pad">
@@ -2318,7 +2818,7 @@
                            </div>
                         </div>
                      </div>
-                      <div class="card">
+                     <div class="card">
                         <div class="card-header pad">
                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
                            Collapsible Group Item #4
@@ -2332,45 +2832,51 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-6">
-               	<div class="bg-white doubt">
-               		<h3 class="title-doubt text-center">Tienes alguna pregunta?<br/>
-               			Puedes <b>contactarnos</b></h3>
-               			<form name="" action="">
-               			<div class="form-doubt container">
-               				<input type="email" placeholder="12345@domain.com" class="input-doubt" name="question"/>
-               				<textarea class="input-doubt text-area" placeholder="Tu mensaje va aqui"></textarea>
-               				<button class="btn btn-fat btn-doubt bg-black">Enviar Mensaje</button>
-               			</div>
-               		</form>
-               	</div>
-
+               <div class="col-md-6 ">
+                  <div class="bg-white doubt wow fadeIn" data-wow-duration="14s" data-wow-delay="10005ms">
+                     <h3 class="title-doubt text-center">Tienes alguna pregunta?<br/>
+                        Puedes <b>contactarnos</b>
+                     </h3>
+                     <form name="" action="">
+                        <div class="form-doubt container">
+                           <input type="email" placeholder="12345@domain.com" class="input-doubt" name="question"/>
+                           <textarea class="input-doubt text-area" placeholder="Tu mensaje va aqui"></textarea>
+                           <button class="btn btn-fat btn-doubt bg-black">Enviar Mensaje</button>
+                        </div>
+                     </form>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid container-footer">
          <footer id="footer" class="row footer" data-path-images="../images"></footer>
       </div>
-      <script src="wow.js" type="text/javascript"></script>
-      <script type="text/javascript">
-      	var wow = new WOW(
-  {
-    boxClass:     'wow',      // animated element css class (default is wow)
-    animateClass: 'animated', // animation css class (default is animated)
-    offset:       0,          // distance to the element when triggering the animation (default is 0)
-    mobile:       true,       // trigger animations on mobile devices (default is true)
-    live:         true,       // act on asynchronously loaded content (default is true)
-    callback:     function(box) {
-      // the callback is fired every time an animation is started
-      // the argument that is passed in is the DOM node being animated
-    },
-    scrollContainer: null,    // optional scroll container selector, otherwise use window,
-    resetAnimation: true,     // reset animation on end (default is true)
-  }
-);
-wow.init();
-      </script>
+      
+         
+      <script>
+    var init = function() {
+      var carousel = document.getElementById('carousel'),
+          navButtons = document.querySelectorAll('#navigation button'),
+          panelCount = carousel.children.length,
+          
+          theta = 0,
+          onNavButtonClick = function( event ){
+            var increment = parseInt( event.target.getAttribute('data-increment') );
+            theta += ( 360 / panelCount ) * increment;
+            carousel.style.transform = 'translateZ( -460px ) rotateY(' + theta + 'deg)';
+      console.log("theta: ",theta)
+          };
+
+      for (var i=0; i < 2; i++) {
+        navButtons[i].addEventListener( 'click', onNavButtonClick, false);
+      }
+
+    };
+    init();
+  </script>
+  
+
       <noscript id="deferred-styles">
          <link rel="stylesheet" href="../main.css">
       </noscript>
